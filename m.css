@@ -1,0 +1,110 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set background gradient */
+body {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container for the search engine */
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Fashionable logo image */
+.container img {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Search input field */
+input[type="search"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+
+/* Search input focus effect */
+input[type="search"]:focus {
+    border-color: #2575fc;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Search button style */
+button[type="submit"] {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 85%;
+    max-width: 350px;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Placeholder text style for search input */
+input[type="search"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="search"] {
+        width: 90%;
+    }
+
+    button[type="submit"] {
+        width: 90%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
